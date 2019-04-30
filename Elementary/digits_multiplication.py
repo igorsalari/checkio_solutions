@@ -16,8 +16,12 @@
 # END_DESC
 
 def checkio(number: int) -> int:
-
-    return 1
+    result = 1
+    for s in str(number):
+        n = int(s)
+        if n > 0:
+            result *= n
+    return result
 
 
 if __name__ == '__main__':

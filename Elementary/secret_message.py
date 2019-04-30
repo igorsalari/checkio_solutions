@@ -23,7 +23,11 @@
 
 def find_message(text: str) -> str:
     """Find a secret message"""
-    return ""
+    word = ""
+    for letter in text:
+        if letter.isupper():
+            word = word + letter
+    return word
 
 if __name__ == '__main__':
     print('Example:')

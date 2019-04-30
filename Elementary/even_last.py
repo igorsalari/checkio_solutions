@@ -22,7 +22,13 @@ def checkio(array):
     """
         sums even-indexes elements and multiply at the last
     """
-    return 0
+    result = 0
+    if len(array) == 0:
+        return 0
+    for i in range(0, len(array), 2):
+        result += array[i]
+    return result * array[-1]
+
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
