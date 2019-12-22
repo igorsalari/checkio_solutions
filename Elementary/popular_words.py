@@ -19,8 +19,12 @@
 # END_DESC
 
 def popular_words(text: str, words: list) -> dict:
-    # your code here
-    return None
+    my_dict = {}
+    split_text = text.lower().split()
+    for word in words:
+        my_dict.setdefault(word, 0)
+        my_dict[word] = split_text.count(word)
+    return my_dict
 
 
 if __name__ == '__main__':
