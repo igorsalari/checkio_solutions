@@ -115,3 +115,5 @@ dmypy.json
 .idea/
 .idea/vcs.xml
 .idea/workspace.xml
+
+.DS_Store
